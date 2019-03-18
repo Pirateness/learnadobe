@@ -6,4 +6,4 @@ function checkCookie() {
 	alert(x);
 }
 
-checkCookie();
+setCookie();
