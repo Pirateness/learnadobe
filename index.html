@@ -15,10 +15,21 @@
 function myFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
+  setCookie();
 }
 </script>
 
-<script src="js/js.cookie.js"></script>
+<script src="js/js.cookie.js">
+	
+function setCookie(){
+	Cookies.set('name', 'value', { expires: 7 });
+}
+
+function checkCookie(){
+	console.log(Cookies.get);
+}
+
+</script>
 	
 </body>
 </html>
