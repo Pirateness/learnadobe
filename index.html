@@ -41,16 +41,14 @@ function popupFunction() {
 	
 	function dimBackground(){
 		document.body.style.backgroundImage = "url('dimbackground.png')";
-		myFunction();
+		tutorialbuttonHide();
 	}
 	
-	function myFunction() {
-	  var x = document.getElementsByClassName("hideMe");
-	  if (x.style.display === "none") {
-		x.style.display = "block";
-	  } else {
-		x.style.display = "none";
-	  }
+	function tutorialbuttonHide() {
+	    var elems = document.getElementsByClassName('hideMe');
+		for (var i=0;i<elems.length;i+=1){
+		  elems[i].style.display = 'none';
+		}
 	}
 </script>
 </body>
