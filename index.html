@@ -12,7 +12,7 @@
 </button>
 	
 <div class="buttoncontainer">
-	<button id="tutorialButton1">
+	<button id="tutorialButton1" onClick="tutorialbuttonnext1">
 		Next
 	</button>
 </div>
@@ -43,7 +43,7 @@ function popupFunction() {
 	}
 	
 	function dimBackground(){
-		document.body.style.backgroundImage = "url('dimbackground.png')";
+		document.body.style.backgroundImage = "url('images/dimbackground.png')";
 		tutorialhideoldButtons();
 		tutorialbuttonShow();
 	}
@@ -63,6 +63,11 @@ function popupFunction() {
 			document.getElementById("tutorialButton1").style.display='block';
 			console.log('Button Enabled')
 		}
+	}
+	
+	function tutorialbuttonnext1{
+		document.body.style.backgroundImage = "url('images/tutorialbg1')";
+		tutorialbuttonShow()
 	}
 </script>
 </body>
