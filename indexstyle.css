@@ -59,6 +59,10 @@ button:focus {outline:0;}
   animation: fadeIn 1s;
 }
 
+.tutorialButton1 .show{
+	visibility: hidden;
+}
+
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
   from {opacity: 0;} 

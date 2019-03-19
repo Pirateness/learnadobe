@@ -10,11 +10,11 @@
 <button type="button" class="popup hideMe" onclick="popupFunction()">Click me to toggle the popup!
   <span class="popuptext" id="myPopup">New Composition does exactly what is says! A composition is essentially the backbone of your project, it applies to everything in your project and is made up of the ingredients of your project (layers, footage, text etc.)</span>
 </button>
-	
-<div class="hideMe">
-  This is my DIV element.
-</div>
 
+<button id="tutorialButton1">
+	Next
+</button>
+	
 <script>
 // When the user clicks on div, open the popup
 function popupFunction() {
@@ -41,14 +41,20 @@ function popupFunction() {
 	
 	function dimBackground(){
 		document.body.style.backgroundImage = "url('dimbackground.png')";
-		tutorialbuttonHide();
+		tutorialhideoldButtons();
+		tutorialbuttonShow();
 	}
 	
-	function tutorialbuttonHide() {
+	function tutorialhideoldButtons() {
 	    var elems = document.getElementsByClassName('hideMe');
 		for (var i=0;i<elems.length;i+=1){
 		  elems[i].style.display = 'none';
 		}
+	}
+	
+	function tutorialbuttonShow(){
+		var popup = document.getElementById("tutorialButton1");
+  		popup.classList.toggle("show");
 	}
 </script>
 </body>
