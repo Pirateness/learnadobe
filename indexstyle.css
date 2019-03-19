@@ -59,8 +59,14 @@ button:focus {outline:0;}
   animation: fadeIn 1s;
 }
 
-.tutorialButton1 .show{
-	visibility: hidden;
+.tutorialButton1{
+	background-image: url();
+}
+
+.buttoncontainer{
+	margin-top: 32.8%;
+	margin-left: 48.5%;
+	position: relative;
 }
 
 /* Add animation (fade in the popup) */
