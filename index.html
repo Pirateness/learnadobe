@@ -6,10 +6,11 @@
 <link href="indexstyle.css" rel="stylesheet" type="text/css">
 </head>
 
-<body onload="checkallcookies()" id="myCookies">
-<button type="button" class="popup" onclick="myFunction();setacookie()">Click me to toggle the popup!
+<body onload="checkallcookies()" id="dimmer">
+<button type="button" class="popup" onclick="myFunction()">Click me to toggle the popup!
   <span class="popuptext" id="myPopup">New Composition does exactly what is says! A composition is essentially the backbone of your project, it applies to everything in your project and is made up of the ingredients of your project (layers, footage, text etc.)</span>
 </button>
+
 <script>
 // When the user clicks on div, open the popup
 function myFunction() {
@@ -17,25 +18,25 @@ function myFunction() {
   popup.classList.toggle("show");
 }
 </script>
-
-<script src="js/js.cookie.js">
-	function setCookie(){
-		Cookies.set('name', 'value', { expires: 7 });
-	}
-</script>
-
+	
 <script>
 	function checkallcookies(){
 		allCookies = document.cookie;
 		console.log(allCookies);
 		if (document.cookie.split(';').filter((item) => item.includes('firstvisit=1')).length) {
-    	console.log('This is not the users first visit')
+    	console.log('This is not the users first visit');
 		} else {
-			alert('Welcome to this website, this is your first visit!')
+			dimBackground();
+			setacookie();
 		}
 	}
+	
 	function setacookie(){
 		document.cookie = "firstvisit=1; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+	}
+	
+	function dimBackground(){
+		document.body.style.backgroundImage = "url('dimbackground.png')";
 	}
 </script>
 </body>
