@@ -1,7 +1,11 @@
 @charset "utf-8";
 
-body{
-	background-image: url(background.png)
+#background-img{
+	background-image: url(background.png);
+	width: 100%;
+ 	position: absolute;
+  	top: 0;
+  	left: 0;
 }
 
 button:focus {outline:0;}
