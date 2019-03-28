@@ -5,7 +5,24 @@ html{
 }
 
 body{
+}
+
+#background{
 	background-image: url(images/background.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+}
+
+#background2{
+	background-image: url(images/dimbackground.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+}
+
+#background3{
+	background-image: url(images/tutorialbg1.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	overflow: hidden;

@@ -6,7 +6,7 @@
 <link href="indexstyle.css" rel="stylesheet" type="text/css">
 </head>
 
-<body onload="checkallcookies()">
+<body onload="checkallcookies()" id="background">
 <button type="button" class="popup hideMe" onclick="popupFunction()">Click me to toggle the popup!
   <span class="popuptext" id="myPopup">New Composition does exactly what is says! A composition is essentially the backbone of your project, it applies to everything in your project and is made up of the ingredients of your project (layers, footage, text etc.)</span>
 </button>
@@ -26,6 +26,10 @@ function popupFunction() {
 </script>
 	
 <script>
+	function changeid(){
+		document.getElementById('background').id = 'background2'; // finds element with an id of "test1", replaces id with "test2"
+	}
+	
 	function checkallcookies(){
 		allCookies = document.cookie;
 		console.log(allCookies);
@@ -43,7 +47,8 @@ function popupFunction() {
 	}
 	
 	function dimBackground(){
-		document.body.style.backgroundImage = "url('images/dimbackground.png')";
+		document.getElementById('background').id = 'background2'; // finds element with an id of "test1", replaces id with "test2"
+		//document.body.style.backgroundImage = "url('images/dimbackground.png')";
 		tutorialhideoldButtons();
 		tutorialbuttonShow();
 	}
@@ -66,7 +71,8 @@ function popupFunction() {
 	}
 	
 	function tutorialbuttonnext1(){
-		document.body.style.backgroundImage = "url('images/tutorialbg1.png')";
+		document.getElementById('background2').id = 'background3'; // finds element with an id of "test1", replaces id with "test2"
+		//document.body.style.backgroundImage = "url('images/tutorialbg1.png')";
 		tutorialbuttonShow();
 	}
 </script>
