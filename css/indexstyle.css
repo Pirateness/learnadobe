@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+body {
+  background-image: url(images/indexbackground.jpg), url(images/whitebg.jpg);
+  background-position: top, bottom;
+  background-repeat: no-repeat, repeat;
+}
+
 #beepboop{
 	font-family: 'Roboto', sans-serif;
 	margin-left: 5%;
@@ -10,6 +16,77 @@
 #beepboop2{
 	font-family: 'Roboto', sans-serif;
 	margin-left: 5%;
-	margin-top: 5%;
+	margin-top: 4%;
 	font-size: 20px;
+	margin-right: 60%;
+}
+
+#beepboop3{
+	font-family: 'Roboto', sans-serif;
+	margin-left: 5%;
+	margin-top: 1%;
+	font-size: 20px;
+	margin-right: 60%;
+}
+
+#beepboop4{
+	font-family: 'Roboto', sans-serif;
+	margin-left: 5%;
+	margin-top: 1%;
+	font-size: 20px;
+	margin-right: 60%;
+}
+
+#beepboop5{
+	font-family: 'Roboto', sans-serif;
+	margin-left: 47.5%;
+	margin-top: 14%;
+	font-size: 20px;
+}
+
+#arrowimage{
+	margin-left: 48.6%;
+	margin-top: -1%;
+	position: absolute;
+}
+
+.heading2{
+	font-family: 'Roboto', sans-serif;
+	margin-left: 5%;
+	margin-top: 10%;
+	font-size: 60px;
+	margin-right: 60%;
+}
+
+#paragraph1{
+	font-family: 'Roboto', sans-serif;
+	margin-left: 5%;
+	margin-top: 100%;
+	font-size: 20px;
+	margin-right: 60%;
+}
+
+.start{
+
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.imagecontainer{
+	margin-top: 5%;
+	height: auto;
+	width: 100%;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 6px); }
+    to   { transform: translate(0, -0px); }    
 }

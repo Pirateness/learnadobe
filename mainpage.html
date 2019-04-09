@@ -6,8 +6,35 @@
 <link href="css/indexstyle.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body class="start">
 	<h1 id="beepboop">Learn Adobe</h1>
-	<p id="beepboop2">Lorem Ipsum</p>
+	<p id="beepboop2">Adobe Inc. is an American multinational computer software company headquartered in San Jose, California. It has historically focused upon the creation of multimedia and creativity software products, with a more recent foray towards digital marketing software.</p>
+	
+	<p id="beepboop3">They develop a range of software, with each piece of software being focused on a single industry. For example Adobe Photoshop is a photo editing and compiling software that is developed primarily for the photography industry. Adobe Illustrator is developed for the art industry and so forth.</p>
+	
+	<p id="beepboop4">Learn Adobe is a website developed with the intent for people to be able to learn how to use Adobe products and best apply them for their own personal use. Learn Adobe was founded to help guide people and assist them with their first steps into thw Adobe suite and set these people up for future success.</p>
+	
+	<h3 id="beepboop5">Features</h3>
+	<img class="floating" id="arrowimage" src="css/images/downarrow.svg" width="20" height="20" alt=""/>
+	<h1 id="scroll-to" class="heading2">Rich Design</h1>
+	<p id="paragraph1">Test</p>	
+	
+	<script>
+		function scrollDown(){
+			window.scroll(0, 1000);
+		}
+	</script>
+	<script>
+		$(window).scroll(function() {
+	   var hT = $('#scroll-to').offset().top,
+		   hH = $('#scroll-to').outerHeight(),
+		   wH = $(window).height(),
+		   wS = $(this).scrollTop();
+		console.log((hT-wH) , wS);
+	   if (wS > (hT+hH-wH)){
+		scrollDown()
+	   }
+	});
+	</script>
 </body>
 </html>
