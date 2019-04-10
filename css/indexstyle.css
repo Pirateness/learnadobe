@@ -9,6 +9,12 @@ body{
   text-align: center;
 }
 
+.container2 {
+  position: relative;
+  text-align: center;
+  margin-top: -14%;
+}
+
 #top-left {
   position: absolute;
   top: 22%;
@@ -28,6 +34,49 @@ body{
   color: white;
 }
 
+.imageoverflow2{
+  position: absolute;
+  top: 45%;
+  left: 27%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  color: white;
+}
+
+.imageoverflow3{
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  color: white;
+}
+
+.imageoverflow4{
+  position: absolute;
+  top: 45%;
+  left: 59%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  color: white;
+}
+
+.imageoverflow5{
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  color: white;
+}
+
+#workflowheading{
+	font-family: 'Roboto', sans-serif;
+	margin-left: 5%;
+	margin-top: 5%;
+	font-size: 60px;
+}
+
 .start {
   background-image: url(images/indexbackground.jpg), url(images/whitebg.jpg);
   background-position: top, bottom;
@@ -42,6 +91,29 @@ body{
 	border: none;
 }
 
+#stormanthem{
+	margin-left: 50%;
+	margin-top: -30%
+}
+
+#top-left2{
+  position: absolute;
+  top: 22%;
+  left: 40%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  color: white;
+}
+
+#paragraph4{
+  position: absolute;
+  top: 32%;
+  left: 42%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
 #paragraph2{
   position: absolute;
   top: 37%;
@@ -50,6 +122,14 @@ body{
   font-size: 20px;
   color: white;
   margin-right: 60%
+}
+
+#paragraph3{
+	font-family: 'Roboto', sans-serif;
+	margin-left: 5%;
+	margin-top: 4%;
+	font-size: 20px;
+	margin-right: 60%;
 }
 
 #nextimage{

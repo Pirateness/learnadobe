@@ -1,80 +1,96 @@
 <!doctype html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="css/animations.css">
 <meta charset="utf-8">
-<title>After Effects</title>
-<link href="css/aftereffectsstyle.css" rel="stylesheet" type="text/css">
+<title>Learn Adobe</title>
+<link href="css/indexstyle.css" rel="stylesheet" type="text/css">
 </head>
 
-<body onload="checkallcookies()" id="background">
-<button type="button" class="popup hideMe" onclick="popupFunction()">Click me to toggle the popup!
-  <span class="popuptext" id="myPopup">New Composition does exactly what is says! A composition is essentially the backbone of your project, it applies to everything in your project and is made up of the ingredients of your project (layers, footage, text etc.)</span>
-</button>
+<body class="start">
+	<h1 id="beepboop">Learn Adobe</h1>
+	<p id="beepboop2">Adobe Inc. is an American multinational computer software company headquartered in San Jose, California. It has historically focused upon the creation of multimedia and creativity software products, with a more recent foray towards digital marketing software.</p>
 	
-<div class="buttoncontainer">
-	<button id="tutorialButton1" onClick="tutorialbuttonnext1()">
-		Next
-	</button>
+	<p id="beepboop3">They develop a range of software, with each piece of software being focused on a single industry. For example Adobe Photoshop is a photo editing and compiling software that is developed primarily for the photography industry. Adobe Illustrator is developed for the art industry and so forth.</p>
+	
+	<p id="beepboop4">Learn Adobe is a website developed with the intent for people to be able to learn how to use Adobe products and best apply them for their own personal use. Learn Adobe was founded to help guide people and assist them with their first steps into thw Adobe suite and set these people up for future success.</p>
+	
+	<h3 id="beepboop5">Features</h3>
+	<img class="floating" id="arrowimage" src="css/images/downarrow.svg" width="20" height="20" alt=""/>
+	<h1 id="heading2">Rich Design</h1>
+	<p id="paragraph1">Learn Adobe is built with a rich design that mimics the style of the Adobe Products. All pages are kept updated to be comparable with Adobe's standards and maintained to be relevant to the latest version
+	<br><br>Animations are added to create a lively interactable webpage that immerses the user into it. Colours and design choices are considered carefully, to maintain that pleasing aesthetic throughout the site <br><br>
+	Adobe Learn has been built from the ground up with consistency in mind. You'll never need to use another website again, as any other websites which are considered high enough of standard to be a useful learning tool and inbuilt or linked within the website.
+	</p>
+	
+	<img id="designimage" src="css/images/ranger.png" alt="">
+	
+	<script>
+		function scrollDown(){
+			window.scroll(0, 1000);
+		}
+	</script>
+	<script>
+		$(window).scroll(function() {
+			$('#heading2').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+700) {
+					$(this).addClass("slideUp");
+				}
+			});
+		});
+	</script>
+	<script>
+	$(window).scroll(function() {
+		$('#top-left').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+800) {
+				$(this).addClass("slideLeft");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#imageoverflow').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("lightSpeedIn");
+			}
+		});
+	});
+</script>
+	
+<div class="container">
+	<img class="bluebg" src="css/images/bluebg.png" alt="">
+	<h1 id="top-left">Unparalleled Performance</h1>
+	<p id="paragraph2" align="left">Learn Adobe has been built from the ground up to support lightning fast, unparalleled performance. Using a variety of techniques, such as pre-caching, accessing already downloaded files and script hosting through Google<br><br>
+	Learn Adobe stores crucial files in your computer so when you re-access the website, those files can be utilised as quickly as your hard drive can run. Learn Adobe also uses cloud hosting of scripts through Google. Instead of having to re-download a script to your computer and store it in a seperate location for this website only, the website takes the script that you have already downloaded and utilises that one instead. <br><br>
+	The website is also hosted through Github, ensuring that the website is kept consistently online for years to come, with minimal to no downtime. Other techniques such as downloading all background images before running the website keeps the website consistently smooth throughout use after first load.
+	</p>
+	<img class="animated" id="imageoverflow" src="css/images/lightningbolt.png" width="20%" height="50%" alt="">
 </div>
 	
-<script>
-// When the user clicks on div, open the popup
-function popupFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-</script>
+<h1 id="workflowheading">Scaleable Workflow</h1>
+<p id="paragraph3">Learn Adobe is scaleable for any application, and suitable for any use. Are you a teacher wanting to teach a large group of students an Adobe application? Think no more as Learn Adobes centralised management utilites, workflow tracking, load balancing and free limited educational license create a uniquely simple and intuative experience.<br><br>Are you a hobbyist wanting to learn the Adobe Suite? Our free limited educational license covers that too. Learn Adobe products with a gratifingly simple workflow that is scaleable for your needs and wants and pace yourself to match.<br><br>Don't settle for sub-par websites and messy user experiences. Learn Adobe surveys and carefully considers every choice to make your experience as easy as it can be.</p>
+<img id="stormanthem" src="css/images/stormanthem.jpg" alt="" width="30%" height="30%">	
 	
-<script>
-	function changeid(){
-		document.getElementById('background').id = 'background2'; // finds element with an id of "test1", replaces id with "test2"
-	}
-	
-	function checkallcookies(){
-		allCookies = document.cookie;
-		console.log(allCookies);
-		document.getElementById("tutorialButton1").style.display='none';
-		if (document.cookie.split(';').filter((item) => item.includes('firstvisit=1')).length) {
-    	console.log('This is not the users first visit');
-		} else {
-			dimBackground();
-			setacookie();
-		}
-	}
-	
-	function setacookie(){
-		document.cookie = "firstvisit=1; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-	}
-	
-	function dimBackground(){
-		document.getElementById('background').id = 'background2'; // finds element with an id of "test1", replaces id with "test2"
-		//document.body.style.backgroundImage = "url('images/dimbackground.png')";
-		tutorialhideoldButtons();
-		tutorialbuttonShow();
-	}
-	
-	function tutorialhideoldButtons() {
-	    var elems = document.getElementsByClassName('hideMe');
-		for (var i=0;i<elems.length;i+=1){
-		  elems[i].style.display = 'none';
-		}
-	}
-	
-	function tutorialbuttonShow(){
-		if (document.getElementById("tutorialButton1").style.display == 'block'){
-			document.getElementById("tutorialButton1").style.display='none';
-			console.log('Button Disabled')
-		} else {
-			document.getElementById("tutorialButton1").style.display='block';
-			console.log('Button Enabled')
-		}
-	}
-	
-	function tutorialbuttonnext1(){
-		document.getElementById('background2').id = 'background3'; // finds element with an id of "test1", replaces id with "test2"
-		//document.body.style.backgroundImage = "url('images/tutorialbg1.png')";
-		tutorialbuttonShow();
-	}
-</script>
+<div class="container2">
+	<img class="bluebg" src="css/images/bluebg.png" alt="">
+	<h1 id="top-left2">Get Started</h1>
+	<p id="paragraph4">What are you waiting for?</p>
+	<a href="aftereffects.html"><img class="imageoverflow2" src="css/images/aelogo.png" width="10%" height="14%" alt=""></a>
+	<img class="imageoverflow3" src="css/images/illlogo.png" width="10%" height="14%" alt="">
+	<img class="imageoverflow4" src="css/images/pslogo.jpg" width="10%" height="14%" alt="">
+</div>
 </body>
 </html>
