@@ -16,6 +16,8 @@
 		Next
 	</button>
 </div>
+e
+<div class="buttoncontainer2"><button id="tutorialButton2" onClick="tutorialbuttonnext2()">Test</button></div>
 	
 <script>
 // When the user clicks on div, open the popup
@@ -70,10 +72,26 @@ function popupFunction() {
 		}
 	}
 	
+	function tutorialbutton2Show(){
+		if (document.getElementById("tutorialButton2").style.display == 'block'){
+			document.getElementById("tutorialButton2").style.display='none';
+			console.log('Button Disabled')
+		} else {
+			document.getElementById("tutorialButton2").style.display='block';
+			console.log('Button Enabled')
+		}
+	}
+	
 	function tutorialbuttonnext1(){
 		document.getElementById('background2').id = 'background3'; // finds element with an id of "test1", replaces id with "test2"
 		//document.body.style.backgroundImage = "url('images/tutorialbg1.png')";
 		tutorialbuttonShow();
+	}
+	
+	function tutorialbuttonnext2(){
+		document.getElementById('background3').id = 'background4'; // finds element with an id of "test1", replaces id with "test2"
+		//document.body.style.backgroundImage = "url('images/tutorialbg1.png')";
+		tutorialbutton2Show();
 	}
 </script>
 </body>

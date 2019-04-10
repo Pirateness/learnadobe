@@ -24,7 +24,14 @@ body{
 #background3{
 	background-image: url(images/tutorialbg1.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+#background4{
+	background-image: url(images/tutorialbg2.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	overflow: hidden;
 }
 
@@ -91,6 +98,21 @@ button:focus {outline:0;}
 	margin-top: 32.8%;
 	margin-left: 48.5%;
 	position: relative;
+}
+
+.buttoncontainer2{
+	margin-top: -20%;
+	margin-left: 39.5%;
+	position: relative;
+}
+
+#tutorialButton2{
+	width: 19%;
+	font-size: 70px;
+	padding-top: 10%;
+	background: transparent;
+    border: none !important;
+	opacity: 0
 }
 
 /* Add animation (fade in the popup) */
