@@ -1,6 +1,9 @@
 <!doctype html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="css/animations.css">
 <meta charset="utf-8">
 <title>Learn Adobe</title>
 <link href="css/indexstyle.css" rel="stylesheet" type="text/css">
@@ -16,8 +19,13 @@
 	
 	<h3 id="beepboop5">Features</h3>
 	<img class="floating" id="arrowimage" src="css/images/downarrow.svg" width="20" height="20" alt=""/>
-	<h1 id="scroll-to" class="heading2">Rich Design</h1>
-	<p id="paragraph1">Test</p>	
+	<h1 id="heading2">Rich Design</h1>
+	<p id="paragraph1">Learn Adobe is built with a rich design that mimics the style of the Adobe Products. All pages are kept updated to be comparable with Adobe's standards and maintained to be relevant to the latest version
+	<br><br>Animations are added to create a lively interactable webpage that immerses the user into it. Colours and design choices are considered carefully, to maintain that pleasing aesthetic throughout the site <br><br>
+	Adobe Learn has been built from the ground up with consistency in mind. You'll never need to use another website again, as any other websites which are considered high enough of standard to be a useful learning tool and inbuilt or linked within the website.
+	</p>
+	
+	<img id="designimage" src="css/images/ranger.png" alt="">
 	
 	<script>
 		function scrollDown(){
@@ -26,15 +34,52 @@
 	</script>
 	<script>
 		$(window).scroll(function() {
-	   var hT = $('#scroll-to').offset().top,
-		   hH = $('#scroll-to').outerHeight(),
-		   wH = $(window).height(),
-		   wS = $(this).scrollTop();
-		console.log((hT-wH) , wS);
-	   if (wS > (hT+hH-wH)){
-		scrollDown()
-	   }
-	});
+			$('#heading2').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+700) {
+					$(this).addClass("slideUp");
+				}
+			});
+		});
 	</script>
+	<script>
+	$(window).scroll(function() {
+		$('#top-left').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+800) {
+				$(this).addClass("slideLeft");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#imageoverflow').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("lightSpeedIn");
+			}
+		});
+	});
+</script>
+	
+<div class="container">
+	<img class="bluebg" src="css/images/bluebg.png" alt="">
+	<h1 id="top-left">Unparalleled Performance</h1>
+	<p id="paragraph2" align="left">Learn Adobe has been built from the ground up to support lightning fast, unparalleled performance. Using a variety of techniques, such as pre-caching, accessing already downloaded files and script hosting through Google<br><br>
+	Learn Adobe stores crucial files in your computer so when you re-access the website, those files can be utilised as quickly as your hard drive can run. Learn Adobe also uses cloud hosting of scripts through Google. Instead of having to re-download a script to your computer and store it in a seperate location for this website only, the website takes the script that you have already downloaded and utilises that one instead. <br><br>
+	The website is also hosted through Github, ensuring that the website is kept consistently online for years to come, with minimal to no downtime. Other techniques such as downloading all background images before running the website keeps the website consistently smooth throughout use after first load.
+	</p>
+	<img class="animated" id="imageoverflow" src="css/images/lightningbolt.png" width="20%" height="50%" alt="">
+</div>
+	
+	
 </body>
 </html>

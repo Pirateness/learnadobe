@@ -1,9 +1,59 @@
 @charset "utf-8";
 
-body {
+body{
+	margin: 0
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+#top-left {
+  position: absolute;
+  top: 22%;
+  left: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  color: white;
+  visibility: hidden;
+}
+
+#imageoverflow{
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  color: white;
+}
+
+.start {
   background-image: url(images/indexbackground.jpg), url(images/whitebg.jpg);
   background-position: top, bottom;
-  background-repeat: no-repeat, repeat;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.bluebg{
+	margin-top: 11.5%;
+	width: 100%;
+	background-image: url(images/bluebg.png);
+	padding-left: 0%;
+	border: none;
+}
+
+#paragraph2{
+  position: absolute;
+  top: 37%;
+  left: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-right: 60%
+}
+
+#nextimage{
+	background-image: url(images/performancebg.jpg)
 }
 
 #beepboop{
@@ -45,15 +95,24 @@ body {
 }
 
 #arrowimage{
-	margin-left: 48.6%;
+	margin-left: 49.1%;
 	margin-top: -1%;
 	position: absolute;
 }
 
-.heading2{
+#heading2{
 	font-family: 'Roboto', sans-serif;
 	margin-left: 5%;
 	margin-top: 10%;
+	font-size: 60px;
+	margin-right: 60%;
+	visibility: hidden;
+}
+
+#performanceheading{
+	font-family: 'Roboto', sans-serif;
+	margin-left: 5%;
+	margin-top: 30%;
 	font-size: 60px;
 	margin-right: 60%;
 }
@@ -61,9 +120,15 @@ body {
 #paragraph1{
 	font-family: 'Roboto', sans-serif;
 	margin-left: 5%;
-	margin-top: 100%;
+	margin-top: 5%;
 	font-size: 20px;
 	margin-right: 60%;
+}
+
+#designimage{
+	margin-left: 40%;
+	position: absolute;
+	margin-top: -20%
 }
 
 .start{
