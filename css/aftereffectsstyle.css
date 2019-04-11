@@ -7,6 +7,21 @@ html{
 body{
 }
 
+.toolbarbuttoncontainer{
+	margin-top: 2.4%;
+}
+
+.Rectangle{
+	margin-top: 3.5%;
+	margin-left: -3%
+}
+
+#toolbarb1{
+	background: transparent;
+    border: none !important;
+	opacity: 0
+}
+
 #background{
 	background-image: url(images/background.png);
 	background-repeat: no-repeat;
