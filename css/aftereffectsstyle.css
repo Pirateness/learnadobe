@@ -8,7 +8,7 @@ body{
 }
 
 #background{
-	background-image: url(images/background.png);
+	background-image: url(images/tutorialbg2.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	overflow: hidden;
@@ -24,14 +24,21 @@ body{
 #background3{
 	background-image: url(images/tutorialbg1.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 100%;
 	overflow: hidden;
 }
 
 #background4{
 	background-image: url(images/tutorialbg2.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 100%;
+	overflow: hidden;
+}
+
+#background5{
+	background-image: url(images/tutorialbg3.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 	overflow: hidden;
 }
 
@@ -106,12 +113,25 @@ button:focus {outline:0;}
 	position: relative;
 }
 
+.buttoncontainer3{
+	margin-top: -11.1%;
+	margin-left: 54.5%;
+	position: relative;
+}
+
 #tutorialButton2{
 	width: 19%;
 	font-size: 70px;
 	padding-top: 10%;
 	background: transparent;
     border: none !important;
+	opacity: 0
+}
+
+#tutorialButton3{
+	background: transparent;
+    border: none !important;
+	width: 11%;
 	opacity: 0
 }
 

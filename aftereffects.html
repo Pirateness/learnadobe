@@ -18,6 +18,9 @@
 </div>
 e
 <div class="buttoncontainer2"><button id="tutorialButton2" onClick="tutorialbuttonnext2()">Test</button></div>
+<div class="buttoncontainer3">
+	<button id="tutorialButton3" onClick="tutorialbuttonnext3()">Test</button>
+</div>
 	
 <script>
 // When the user clicks on div, open the popup
@@ -90,6 +93,12 @@ function popupFunction() {
 	
 	function tutorialbuttonnext2(){
 		document.getElementById('background3').id = 'background4'; // finds element with an id of "test1", replaces id with "test2"
+		//document.body.style.backgroundImage = "url('images/tutorialbg1.png')";
+		tutorialbutton2Show();
+	}
+	
+	function tutorialbuttonnext3(){
+		document.getElementById('background4').id = 'background5'; // finds element with an id of "test1", replaces id with "test2"
 		//document.body.style.backgroundImage = "url('images/tutorialbg1.png')";
 		tutorialbutton2Show();
 	}
