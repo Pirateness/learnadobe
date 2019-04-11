@@ -42,6 +42,13 @@ body{
 	overflow: hidden;
 }
 
+#background6{
+	background-image: url(images/tutorialbg4.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+}
+
 button:focus {outline:0;}
 
 /* Popup container - can be anything you want */
@@ -97,10 +104,6 @@ button:focus {outline:0;}
   animation: fadeIn 1s;
 }
 
-.tutorialButton1{
-	background-image: url();
-}
-
 .buttoncontainer{
 	margin-top: 32.8%;
 	margin-left: 48.5%;
@@ -114,8 +117,20 @@ button:focus {outline:0;}
 }
 
 .buttoncontainer3{
-	margin-top: 14.4%;
+	margin-top: 16.25%;
 	margin-left: 54.5%;
+	position: relative;
+}
+
+.buttoncontainer4{
+	margin-top: 5%;
+	margin-left: 49%;
+	position: relative;
+}
+
+.buttoncontainer5{
+	margin-top: -13.8%;
+	margin-left: 57%;
 	position: relative;
 }
 
@@ -133,6 +148,14 @@ button:focus {outline:0;}
     border: none !important;
 	width: 11%;
 	opacity: 0
+}
+
+#tutorialButton4{
+	display: none;
+}
+
+#tutorialButton5{
+	display: none;
 }
 
 /* Add animation (fade in the popup) */

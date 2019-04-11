@@ -16,10 +16,17 @@
 		Next
 	</button>
 </div>
-e
 <div class="buttoncontainer2"><button id="tutorialButton2" onClick="tutorialbuttonnext2()">Test</button></div>
 <div class="buttoncontainer3">
 	<button id="tutorialButton3" onClick="tutorialbuttonnext3()">Test</button>
+</div>
+	
+<div class="buttoncontainer4">
+	<button id="tutorialButton4" onClick="tutorialbuttonnext4()">Continue</button>
+</div>
+	
+<div class="buttoncontainer5">
+	<button id="tutorialButton5" onClick="tutorialbuttonnext5()">Continue</button>
 </div>
 	
 <script>
@@ -65,6 +72,13 @@ function popupFunction() {
 		}
 	}
 	
+	function tutorialshowoldButtons() {
+	    var elems = document.getElementsByClassName('hideMe');
+		for (var i=0;i<elems.length;i+=1){
+		  elems[i].style.display = 'block';
+		}
+	}
+	
 	function tutorialbuttonShow(){
 		if (document.getElementById("tutorialButton1").style.display == 'block'){
 			document.getElementById("tutorialButton1").style.display='none';
@@ -85,6 +99,36 @@ function popupFunction() {
 		}
 	}
 	
+	function tutorialbutton3Show(){
+		if (document.getElementById("tutorialButton3").style.display == 'block'){
+			document.getElementById("tutorialButton3").style.display='none';
+			console.log('Button Disabled')
+		} else {
+			document.getElementById("tutorialButton3").style.display='block';
+			console.log('Button Enabled')
+		}
+	}
+	
+	function tutorialbutton4Show(){
+		if (document.getElementById("tutorialButton4").style.display == 'block'){
+			document.getElementById("tutorialButton4").style.display='none';
+			console.log('Button Disabled')
+		} else {
+			document.getElementById("tutorialButton4").style.display='block';
+			console.log('Button Enabled')
+		}
+	}
+	
+	function tutorialbutton5Show(){
+		if (document.getElementById("tutorialButton5").style.display == 'block'){
+			document.getElementById("tutorialButton5").style.display='none';
+			console.log('Button Disabled')
+		} else {
+			document.getElementById("tutorialButton5").style.display='block';
+			console.log('Button Enabled')
+		}
+	}
+	
 	function tutorialbuttonnext1(){
 		document.getElementById('background2').id = 'background3'; // finds element with an id of "test1", replaces id with "test2"
 		//document.body.style.backgroundImage = "url('images/tutorialbg1.png')";
@@ -100,7 +144,22 @@ function popupFunction() {
 	function tutorialbuttonnext3(){
 		document.getElementById('background4').id = 'background5'; // finds element with an id of "test1", replaces id with "test2"
 		//document.body.style.backgroundImage = "url('images/tutorialbg1.png')";
-		tutorialbutton2Show();
+		tutorialbutton3Show();
+		tutorialbutton4Show();
+	}
+	
+	function tutorialbuttonnext4(){
+		document.getElementById('background5').id = 'background6'; // finds element with an id of "test1", replaces id with "test2"
+		//document.body.style.backgroundImage = "url('images/tutorialbg1.png')";
+		tutorialbutton4Show();
+		tutorialbutton5Show();
+	}
+	
+	function tutorialbuttonnext5(){
+		document.getElementById('background6').id = 'background'; // finds element with an id of "test1", replaces id with "test2"
+		//document.body.style.backgroundImage = "url('images/tutorialbg1.png')";
+		tutorialbutton5Show();
+		tutorialshowoldButtons();
 	}
 </script>
 </body>
