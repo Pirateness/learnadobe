@@ -12,14 +12,29 @@ body{
 }
 
 .Rectangle{
-	margin-top: 3.5%;
-	margin-left: -3%
+	margin-top: -5%;
+	margin-left: -3%;
+	background-color: transparent
+}
+
+.rectanglememe{
+	background-color: white;
+}
+
+#rect1{
+	display: none
 }
 
 #toolbarb1{
 	background: transparent;
     border: none !important;
 	opacity: 0
+}
+
+.imagejames{
+	margin-top: 0;
+	padding-top: 0;
+	border: none;
 }
 
 #background{
