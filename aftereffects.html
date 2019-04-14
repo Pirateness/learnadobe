@@ -13,6 +13,8 @@
 	<button class="toolbarb1" onClick="toolbarb2()">T</button>
 	<button class="toolbarb1" onClick="toolbarb3()">T</button>
 	<button class="toolbarb1 toolbarb2" onClick="toolbarb4()">T</button>
+	<button class="toolbarb1" onClick="toolbarb5()">T</button>
+	<button class="toolbarb1" onClick="toolbarb6()">T</button>
 </div>
 	
 <svg id="rect1" class="Rectangle" width="700" height="500">
@@ -70,6 +72,38 @@
 	<text class="texttest2" y="430" x="60" fill="black">composition</text>
 	</g>
 <image class="imagejames" width="550" height="500" xlink:href="css/images/movetool4.gif" clip-path="url(#circleView4)"	/>
+</svg>
+	
+<svg id="rect5" class="Rectangle" width="700" height="500">
+	 <defs>
+        <clippath id="circleView5">
+            <rect width="800" height="600" style="background-color: transparent"/>         
+        </clippath>
+    </defs>
+	<g>
+	<rect y="350" width="550" height="110" style="fill:white"></rect>
+	<text class="texttest" y="370" x="60" fill="black">Unified Camera Tool</text>
+	<text class="texttest2" y="390" x="60" fill="black">The unified camera tool is used to manipulate 3D space in AE,</text>
+	<text class="texttest2" y="410" x="60" fill="black">by left clicking, you can rotate an object in 3D space. By</text>
+	<text class="texttest2" y="430" x="60" fill="black">by right clicking, you can move the object along the Z coords</text>
+	<text class="texttest2" y="450" x="60" fill="black">(towards the viewer and away from).</text>
+	</g>
+<image class="imagejames" width="550" height="500" xlink:href="css/images/movetool5.gif" clip-path="url(#circleView5)"	/>
+</svg>
+	
+<svg id="rect6" class="Rectangle" width="700" height="500">
+	 <defs>
+        <clippath id="circleView6">
+            <rect width="800" height="600" style="background-color: transparent"/>         
+        </clippath>
+    </defs>
+	<g>
+	<rect y="350" width="550" height="100" style="fill:white"></rect>
+	<text class="texttest" y="390" x="60" fill="black">Pan Behind (Anchor Point) Tool</text>
+	<text class="texttest2" y="410" x="60" fill="black">This tool is used to move the anchor point of a camera/layer</text>
+	<text class="texttest2" y="430" x="60" fill="black">along the X and Y coords in 3D space</text>
+	</g>
+<image class="imagejames" width="550" height="500" xlink:href="css/images/movetool6.gif" clip-path="url(#circleView6)"	/>
 </svg>
 	
 <button type="button" class="popup hideMe" onclick="popupFunction()">Click me to toggle the popup!
@@ -180,6 +214,26 @@ function popupFunction() {
 			console.log('Button Disabled')
 		} else {
 			document.getElementById("rect4").style.display='block';
+			console.log('Button Enabled')
+		}
+	}
+	
+	function toolbarb5(){
+		if (document.getElementById("rect5").style.display == 'block'){
+			document.getElementById("rect5").style.display='none';
+			console.log('Button Disabled')
+		} else {
+			document.getElementById("rect5").style.display='block';
+			console.log('Button Enabled')
+		}
+	}
+	
+	function toolbarb6(){
+		if (document.getElementById("rect6").style.display == 'block'){
+			document.getElementById("rect6").style.display='none';
+			console.log('Button Disabled')
+		} else {
+			document.getElementById("rect6").style.display='block';
 			console.log('Button Enabled')
 		}
 	}
