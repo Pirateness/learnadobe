@@ -9,7 +9,10 @@
 <body onload="checkallcookies()" id="background">
 
 <div class="toolbarbuttoncontainer hideMe">
-	<button id="toolbarb1" onClick="toolbarb1()">T</button>
+	<button class="toolbarb1 toolbarbstart" onClick="toolbarb1()">T</button>
+	<button class="toolbarb1" onClick="toolbarb2()">T</button>
+	<button class="toolbarb1" onClick="toolbarb3()">T</button>
+	<button class="toolbarb1 toolbarb2" onClick="toolbarb4()">T</button>
 </div>
 	
 <svg id="rect1" class="Rectangle" width="700" height="500">
@@ -20,10 +23,53 @@
     </defs>
 	<g>
 	<rect y="350" width="550" height="100" style="fill:white"></rect>
-	<text class="texttest" y="390" x="60" fill="black">Move tool</text>
-	<text class="texttest2" y="410" x="60" fill="black">The move tool is used to move objects within the workspace</text>
+	<text class="texttest" y="390" x="60" fill="black">Selection Tool</text>
+	<text class="texttest2" y="410" x="60" fill="black">The selection tool is used to move objects within the composition</text>
 	</g>
 <image class="imagejames" width="550" height="500" xlink:href="css/images/movetool.gif" clip-path="url(#circleView)"	/>
+</svg>
+	
+<svg id="rect2" class="Rectangle" width="700" height="500">
+	 <defs>
+        <clippath id="circleView2">
+            <rect width="800" height="600" style="background-color: transparent"/>         
+        </clippath>
+    </defs>
+	<g>
+	<rect y="350" width="550" height="100" style="fill:white"></rect>
+	<text class="texttest" y="390" x="60" fill="black">Hand Tool</text>
+	<text class="texttest2" y="410" x="60" fill="black">The hand tool is used to move objects within the workspace</text>
+	</g>
+<image class="imagejames" width="550" height="500" xlink:href="css/images/movetool2.gif" clip-path="url(#circleView2)"	/>
+</svg>
+	
+<svg id="rect3" class="Rectangle" width="700" height="500">
+	 <defs>
+        <clippath id="circleView3">
+            <rect width="800" height="600" style="background-color: transparent"/>         
+        </clippath>
+    </defs>
+	<g>
+	<rect y="350" width="550" height="100" style="fill:white"></rect>
+	<text class="texttest" y="390" x="60" fill="black">Zoom Tool</text>
+	<text class="texttest2" y="410" x="60" fill="black">The zoom tool is used to zoom in and out on the composition</text>
+	</g>
+<image class="imagejames" width="550" height="500" xlink:href="css/images/movetool3.gif" clip-path="url(#circleView3)"	/>
+</svg>
+	
+<svg id="rect4" class="Rectangle" width="700" height="500">
+	 <defs>
+        <clippath id="circleView4">
+            <rect width="800" height="600" style="background-color: transparent"/>         
+        </clippath>
+    </defs>
+	<g>
+	<rect y="350" width="550" height="100" style="fill:white"></rect>
+	<text class="texttest" y="390" x="60" fill="black">Rotation Tool</text>
+	<text class="texttest2" y="410" x="60" fill="black">The rotation tool is used to rotate the selected layer in the</text>
+	<text class="texttest2" y="430" x="60" fill="black">composition</text>
+	</g>
+<image class="imagejames" width="550" height="500" xlink:href="css/images/movetool4.gif" clip-path="url(#circleView4)"	/>
 </svg>
 	
 <button type="button" class="popup hideMe" onclick="popupFunction()">Click me to toggle the popup!
@@ -104,6 +150,36 @@ function popupFunction() {
 			console.log('Button Disabled')
 		} else {
 			document.getElementById("rect1").style.display='block';
+			console.log('Button Enabled')
+		}
+	}
+	
+	function toolbarb2(){
+		if (document.getElementById("rect2").style.display == 'block'){
+			document.getElementById("rect2").style.display='none';
+			console.log('Button Disabled')
+		} else {
+			document.getElementById("rect2").style.display='block';
+			console.log('Button Enabled')
+		}
+	}
+	
+	function toolbarb3(){
+		if (document.getElementById("rect3").style.display == 'block'){
+			document.getElementById("rect3").style.display='none';
+			console.log('Button Disabled')
+		} else {
+			document.getElementById("rect3").style.display='block';
+			console.log('Button Enabled')
+		}
+	}
+	
+	function toolbarb4(){
+		if (document.getElementById("rect4").style.display == 'block'){
+			document.getElementById("rect4").style.display='none';
+			console.log('Button Disabled')
+		} else {
+			document.getElementById("rect4").style.display='block';
 			console.log('Button Enabled')
 		}
 	}

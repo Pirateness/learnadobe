@@ -36,10 +36,37 @@ body{
 	display: none
 }
 
-#toolbarb1{
+#rect2{
+	display: none
+}
+
+#rect3{
+	display: none
+}
+
+#rect4{
+	display: none
+}
+
+.toolbarb1{
 	background: transparent;
     border: none !important;
-	opacity: 0
+	opacity: 0;
+	margin-left: 0.1%
+}
+
+.toolbarbstart{
+	background: transparent;
+    border: none !important;
+	opacity: 0;
+	margin-left: 0.2%
+}
+
+.toolbarb2{
+	background: transparent;
+    border: none !important;
+	opacity: 0;
+	margin-left: 0.4%;
 }
 
 .imagejames{
