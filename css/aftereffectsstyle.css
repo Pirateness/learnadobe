@@ -32,6 +32,11 @@ body{
 	background-color: white;
 }
 
+.redotutorial{
+	margin-left: 50%;
+	margin-top: -2.8%
+}
+
 #rect1{
 	display: none
 }
@@ -53,6 +58,18 @@ body{
 }
 
 #rect6{
+	display: none
+}
+
+#rect7{
+	display: none
+}
+
+#rect8{
+	display: none
+}
+
+#rect9{
 	display: none
 }
 

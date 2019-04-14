@@ -15,7 +15,12 @@
 	<button class="toolbarb1 toolbarb2" onClick="toolbarb4()">T</button>
 	<button class="toolbarb1" onClick="toolbarb5()">T</button>
 	<button class="toolbarb1" onClick="toolbarb6()">T</button>
+	<button class="toolbarb1 toolbarb2" onClick="toolbarb7()">T</button>
+	<button class="toolbarb1" onClick="toolbarb8()">T</button>
+	<button class="toolbarb1" onClick="toolbarb9()">T</button>
 </div>
+	
+<button class="redotutorial hideMe" onClick="delete_cookie('firstvisit');">Tutorial</button>
 	
 <svg id="rect1" class="Rectangle" width="700" height="500">
 	 <defs>
@@ -106,6 +111,51 @@
 <image class="imagejames" width="550" height="500" xlink:href="css/images/movetool6.gif" clip-path="url(#circleView6)"	/>
 </svg>
 	
+<svg id="rect7" class="Rectangle" width="700" height="500">
+	 <defs>
+        <clippath id="circleView7">
+            <rect width="800" height="600" style="background-color: transparent"/>         
+        </clippath>
+    </defs>
+	<g>
+	<rect y="350" width="550" height="100" style="fill:white"></rect>
+	<text class="texttest" y="390" x="60" fill="black">Rectnagle Tool</text>
+	<text class="texttest2" y="410" x="60" fill="black">The rectangle tool is used to create rectangles of any size</text>
+	<text class="texttest2" y="430" x="60" fill="black">as a new layer</text>
+	</g>
+<image class="imagejames" width="550" height="500" xlink:href="css/images/movetool7.gif" clip-path="url(#circleView7)"	/>
+</svg>
+	
+<svg id="rect8" class="Rectangle" width="700" height="500">
+	 <defs>
+        <clippath id="circleView8">
+            <rect width="800" height="600" style="background-color: transparent"/>         
+        </clippath>
+    </defs>
+	<g>
+	<rect y="350" width="550" height="100" style="fill:white"></rect>
+	<text class="texttest" y="390" x="60" fill="black">Pen Tool</text>
+	<text class="texttest2" y="410" x="60" fill="black">The pen tool is used to create polygons of any type as a</text>
+	<text class="texttest2" y="430" x="60" fill="black">new layer</text>
+	</g>
+<image class="imagejames" width="550" height="500" xlink:href="css/images/movetool8.gif" clip-path="url(#circleView8)"	/>
+</svg>
+	
+<svg id="rect9" class="Rectangle" width="700" height="500">
+	 <defs>
+        <clippath id="circleView9">
+            <rect width="800" height="600" style="background-color: transparent"/>         
+        </clippath>
+    </defs>
+	<g>
+	<rect y="350" width="550" height="100" style="fill:white"></rect>
+	<text class="texttest" y="390" x="60" fill="black">Text Tool</text>
+	<text class="texttest2" y="410" x="60" fill="black">The text tool is used to write text onto the composition</text>
+	<text class="texttest2" y="430" x="60" fill="black">as a new layer</text>
+	</g>
+<image class="imagejames" width="550" height="500" xlink:href="css/images/movetool9.gif" clip-path="url(#circleView9)"	/>
+</svg>
+	
 <button type="button" class="popup hideMe" onclick="popupFunction()">Click me to toggle the popup!
   <span class="popuptext" id="myPopup">New Composition does exactly what is says! A composition is essentially the backbone of your project, it applies to everything in your project and is made up of the ingredients of your project (layers, footage, text etc.)</span>
 </button>
@@ -138,6 +188,11 @@ function popupFunction() {
 </script>
 	
 <script>
+	function del_cookie(name) {
+		document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+		document.location.reload();
+	}
+	
 	function changeid(){
 		document.getElementById('background').id = 'background2'; // finds element with an id of "test1", replaces id with "test2"
 	}
@@ -234,6 +289,36 @@ function popupFunction() {
 			console.log('Button Disabled')
 		} else {
 			document.getElementById("rect6").style.display='block';
+			console.log('Button Enabled')
+		}
+	}
+	
+	function toolbarb7(){
+		if (document.getElementById("rect7").style.display == 'block'){
+			document.getElementById("rect7").style.display='none';
+			console.log('Button Disabled')
+		} else {
+			document.getElementById("rect7").style.display='block';
+			console.log('Button Enabled')
+		}
+	}
+	
+	function toolbarb8(){
+		if (document.getElementById("rect8").style.display == 'block'){
+			document.getElementById("rect8").style.display='none';
+			console.log('Button Disabled')
+		} else {
+			document.getElementById("rect8").style.display='block';
+			console.log('Button Enabled')
+		}
+	}
+	
+	function toolbarb9(){
+		if (document.getElementById("rect9").style.display == 'block'){
+			document.getElementById("rect9").style.display='none';
+			console.log('Button Disabled')
+		} else {
+			document.getElementById("rect9").style.display='block';
 			console.log('Button Enabled')
 		}
 	}
